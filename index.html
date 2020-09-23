@@ -5,22 +5,31 @@
     <meta charset="utf-8">
     <title>My first three.js app</title>
     <style>
+        html,
         body {
             margin: 0;
+            height: 100%;
+            overflow: hidden;
+            background: linear-gradient(#d0e9f1, #9abcc7);
         }
 
         canvas {
             margin: 100px auto;
             display: block;
         }
+
+        #mountain-target {
+            height: 100%;
+        }
     </style>
 </head>
 
 <body>
-    <canvas id="c"></canvas>
+    <!-- <canvas id="c"></canvas> -->
+    <div id='mountain-target'></div>
     <script src="node_modules/three/build/three.js"></script>
     <script src="node_modules/three/examples/js/controls/OrbitControls.js"></script>
-    <script src="./src/game.js"></script>
+    <script src="./src/game1.js"></script>
 </body>
 
 </html>

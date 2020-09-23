@@ -17,7 +17,7 @@ canvas.addEventListener('mousemove', e => {
 })
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(100, 2, 1, 10000);
-camera.position.set(0, 0, 10)
+camera.position.set(10, 10, 20)
 camera.lookAt(0, 0, 0)
 
 var renderer = new THREE.WebGLRenderer({
@@ -67,7 +67,7 @@ var cube2 = new THREE.Mesh(geometry2, material2);
 cube2.position.set(2, 0, 0)
 scene.add(cube2);
 
-var geometry3 = new THREE.CircleBufferGeometry(10, 10, 1);
+var geometry3 = new THREE.PlaneBufferGeometry(50, 50, 1);
 var material3 = new THREE.MeshBasicMaterial({
     color: 0x043a00
 });
